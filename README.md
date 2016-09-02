@@ -4,7 +4,11 @@
 
 It works under either python 2 or 3.
 
-#Example
+# Installation
+
+	pip install stra
+
+# Example
 
     ./stra.py ls -l
     [OUT] total 64
