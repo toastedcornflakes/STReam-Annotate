@@ -23,9 +23,11 @@ from time import sleep
 from errno import ENOENT
 from os import strerror
 
+from os.path import basename
 
-def usage(prog):
-    print("Usage: %s args [...]" % (prog))
+
+def usage(prog_path):
+    print("Usage: %s prog [...]" % (basename(prog_path)))
 
 try:
     # function that will write bytes to stdout
