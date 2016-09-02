@@ -65,7 +65,8 @@ def main(*args):
 
         sleep(0.01)
 
-if __name__ == '__main__':
+
+def entrypoint():
     if len(sys.argv) <= 1:
         usage(sys.argv[0])
         sys.exit()
@@ -73,3 +74,6 @@ if __name__ == '__main__':
         sys.exit(main(*sys.argv[1:]))
     except KeyboardInterrupt:
         sys.exit()
+
+if __name__ == '__main__':
+    entrypoint()
